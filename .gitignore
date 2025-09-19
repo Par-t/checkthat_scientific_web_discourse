@@ -17,6 +17,9 @@ outputs/*
 experiments/*
 !experiments/.gitkeep
 
+# Progress tracking
+PROJECT_CONTEXT.md
+
 # Notebooks
 .ipynb_checkpoints/
 notebooks/**

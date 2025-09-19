@@ -1,0 +1,339 @@
+{
+  "evaluation_metadata": {
+    "creation_timestamp": "2025-09-19T16:30:34.639146",
+    "format_version": "2.0",
+    "description": "Unified ranked retrieval evaluation results",
+    "k_values_evaluated": [
+      5,
+      10,
+      25
+    ],
+    "metrics_computed": [
+      "ndcg",
+      "map",
+      "mrr",
+      "recall"
+    ]
+  },
+  "sparse": {
+    "model_type": "bm25",
+    "experiments": {
+      "baseline": {
+        "model": "BM25",
+        "preprocessing_method": "baseline",
+        "model_parameters": {
+          "k1": 1.5,
+          "b": 0.75
+        },
+        "k": 1000,
+        "output_file": "bm25_topk_baseline.csv",
+        "shape": [
+          12842,
+          5
+        ],
+        "sample_topk_length": 1000,
+        "experiment_metadata": {
+          "experiment_type": "bm25_ranking",
+          "timestamp": "2025-09-18T19:40:10.327226",
+          "preprocessing_methods": [
+            "baseline",
+            "stopwords_removed",
+            "stopwords_punc_removed",
+            "stopwords_punc_stemmed",
+            "stopwords_punc_lemmatized"
+          ]
+        },
+        "metrics": {
+          "mrr": 0.5605606807575443,
+          "mrr_at": {
+            "mrr_5": 0.5505152364636869,
+            "mrr_10": 0.5555023756374792,
+            "mrr_25": 0.5586068659371164
+          },
+          "ndcg": {
+            "ndcg_5": 0.6167263666095624,
+            "ndcg_10": 0.6538701136894565,
+            "ndcg_25": 0.7026942843793802
+          },
+          "map": {
+            "map_5": 0.5505152364636869,
+            "map_10": 0.5555023756374792,
+            "map_25": 0.5586068659371164
+          },
+          "recall": {
+            "recall_5": 0.6167263666095624,
+            "recall_10": 0.6538701136894565,
+            "recall_25": 0.7026942843793802
+          },
+          "total_queries": 12842,
+          "queries_with_results": 12842,
+          "topk_column_used": "bm25_topk"
+        }
+      },
+      "stopwords_removed": {
+        "model": "BM25",
+        "preprocessing_method": "stopwords_removed",
+        "model_parameters": {
+          "k1": 1.5,
+          "b": 0.75
+        },
+        "k": 1000,
+        "output_file": "bm25_topk_stopwords_removed.csv",
+        "shape": [
+          12842,
+          5
+        ],
+        "sample_topk_length": 1000,
+        "experiment_metadata": {
+          "experiment_type": "bm25_ranking",
+          "timestamp": "2025-09-18T19:40:10.327226",
+          "preprocessing_methods": [
+            "baseline",
+            "stopwords_removed",
+            "stopwords_punc_removed",
+            "stopwords_punc_stemmed",
+            "stopwords_punc_lemmatized"
+          ]
+        },
+        "metrics": {
+          "mrr": 0.6063827010405307,
+          "mrr_at": {
+            "mrr_5": 0.595534184706432,
+            "mrr_10": 0.6010386306835458,
+            "mrr_25": 0.6043900676075633
+          },
+          "ndcg": {
+            "ndcg_5": 0.6616570627628096,
+            "ndcg_10": 0.7026942843793802,
+            "ndcg_25": 0.7558791465503816
+          },
+          "map": {
+            "map_5": 0.595534184706432,
+            "map_10": 0.6010386306835458,
+            "map_25": 0.6043900676075633
+          },
+          "recall": {
+            "recall_5": 0.6616570627628096,
+            "recall_10": 0.7026942843793802,
+            "recall_25": 0.7558791465503816
+          },
+          "total_queries": 12842,
+          "queries_with_results": 12842,
+          "topk_column_used": "bm25_topk"
+        }
+      },
+      "stopwords_punc_removed": {
+        "model": "BM25",
+        "preprocessing_method": "stopwords_punc_removed",
+        "model_parameters": {
+          "k1": 1.5,
+          "b": 0.75
+        },
+        "k": 1000,
+        "output_file": "bm25_topk_stopwords_punc_removed.csv",
+        "shape": [
+          12842,
+          5
+        ],
+        "sample_topk_length": 1000,
+        "experiment_metadata": {
+          "experiment_type": "bm25_ranking",
+          "timestamp": "2025-09-18T19:40:10.327226",
+          "preprocessing_methods": [
+            "baseline",
+            "stopwords_removed",
+            "stopwords_punc_removed",
+            "stopwords_punc_stemmed",
+            "stopwords_punc_lemmatized"
+          ]
+        },
+        "metrics": {
+          "mrr": 0.6312585697821718,
+          "mrr_at": {
+            "mrr_5": 0.620863832217204,
+            "mrr_10": 0.626072466831305,
+            "mrr_25": 0.6293599240262047
+          },
+          "ndcg": {
+            "ndcg_5": 0.6949073353060271,
+            "ndcg_10": 0.7337642111820589,
+            "ndcg_25": 0.7855474225198568
+          },
+          "map": {
+            "map_5": 0.620863832217204,
+            "map_10": 0.626072466831305,
+            "map_25": 0.6293599240262047
+          },
+          "recall": {
+            "recall_5": 0.6949073353060271,
+            "recall_10": 0.7337642111820589,
+            "recall_25": 0.7855474225198568
+          },
+          "total_queries": 12842,
+          "queries_with_results": 12842,
+          "topk_column_used": "bm25_topk"
+        }
+      },
+      "stopwords_punc_stemmed": {
+        "model": "BM25",
+        "preprocessing_method": "stopwords_punc_stemmed",
+        "model_parameters": {
+          "k1": 1.5,
+          "b": 0.75
+        },
+        "k": 1000,
+        "output_file": "bm25_topk_stopwords_punc_stemmed.csv",
+        "shape": [
+          12842,
+          5
+        ],
+        "sample_topk_length": 1000,
+        "experiment_metadata": {
+          "experiment_type": "bm25_ranking",
+          "timestamp": "2025-09-18T19:40:10.327226",
+          "preprocessing_methods": [
+            "baseline",
+            "stopwords_removed",
+            "stopwords_punc_removed",
+            "stopwords_punc_stemmed",
+            "stopwords_punc_lemmatized"
+          ]
+        },
+        "metrics": {
+          "mrr": 0.6187293330550019,
+          "mrr_at": {
+            "mrr_5": 0.6075416601775425,
+            "mrr_10": 0.613417778469951,
+            "mrr_25": 0.6168225688762582
+          },
+          "ndcg": {
+            "ndcg_5": 0.6847843015106682,
+            "ndcg_10": 0.7283133468307117,
+            "ndcg_25": 0.7819654259461143
+          },
+          "map": {
+            "map_5": 0.6075416601775425,
+            "map_10": 0.613417778469951,
+            "map_25": 0.6168225688762582
+          },
+          "recall": {
+            "recall_5": 0.6847843015106682,
+            "recall_10": 0.7283133468307117,
+            "recall_25": 0.7819654259461143
+          },
+          "total_queries": 12842,
+          "queries_with_results": 12842,
+          "topk_column_used": "bm25_topk"
+        }
+      },
+      "stopwords_punc_lemmatized": {
+        "model": "BM25",
+        "preprocessing_method": "stopwords_punc_lemmatized",
+        "model_parameters": {
+          "k1": 1.5,
+          "b": 0.75
+        },
+        "k": 1000,
+        "output_file": "bm25_topk_stopwords_punc_lemmatized.csv",
+        "shape": [
+          12842,
+          5
+        ],
+        "sample_topk_length": 1000,
+        "experiment_metadata": {
+          "experiment_type": "bm25_ranking",
+          "timestamp": "2025-09-18T19:40:10.327226",
+          "preprocessing_methods": [
+            "baseline",
+            "stopwords_removed",
+            "stopwords_punc_removed",
+            "stopwords_punc_stemmed",
+            "stopwords_punc_lemmatized"
+          ]
+        },
+        "metrics": {
+          "mrr": 0.6263629227141297,
+          "mrr_at": {
+            "mrr_5": 0.615671235010123,
+            "mrr_10": 0.621138507575589,
+            "mrr_25": 0.6245012406895512
+          },
+          "ndcg": {
+            "ndcg_5": 0.6911695997508176,
+            "ndcg_10": 0.7318953434044542,
+            "ndcg_25": 0.7846908581217878
+          },
+          "map": {
+            "map_5": 0.615671235010123,
+            "map_10": 0.621138507575589,
+            "map_25": 0.6245012406895512
+          },
+          "recall": {
+            "recall_5": 0.6911695997508176,
+            "recall_10": 0.7318953434044542,
+            "recall_25": 0.7846908581217878
+          },
+          "total_queries": 12842,
+          "queries_with_results": 12842,
+          "topk_column_used": "bm25_topk"
+        }
+      }
+    }
+  },
+  "dense": {
+    "model_type": "sentence-transformers",
+    "experiments": {
+      "snowflake": {
+        "model": "Snowflake/snowflake-arctic-embed-l",
+        "preprocessing_method": "none",
+        "model_parameters": {
+          "embeddings": 1024,
+          "size": "335M",
+          "max_seq_length": 512,
+          "link": "https://huggingface.co/Snowflake/snowflake-arctic-embed-l"
+        },
+        "output_file": "snowflake_topk.csv",
+        "file_size_bytes": 421494893,
+        "columns": [
+          "post_id",
+          "cord_uid",
+          "tweet_text",
+          "tweet_text_processed",
+          "arctic_topk",
+          "arctic_scores"
+        ],
+        "experiment_metadata": {
+          "experiment_type": "dense_ranking",
+          "added_at": "2025-09-19T16:10:12.001505",
+          "model_link": "https://huggingface.co/Snowflake/snowflake-arctic-embed-l"
+        },
+        "metrics": {
+          "mrr": 0.6719216371447533,
+          "mrr_at": {
+            "mrr_5": 0.6597661319628303,
+            "mrr_10": 0.6665129671242427,
+            "mrr_25": 0.6702637228309181
+          },
+          "ndcg": {
+            "ndcg_5": 0.7602398380314592,
+            "ndcg_10": 0.8106213985360535,
+            "ndcg_25": 0.8698022114935369
+          },
+          "map": {
+            "map_5": 0.6597661319628303,
+            "map_10": 0.6665129671242427,
+            "map_25": 0.6702637228309181
+          },
+          "recall": {
+            "recall_5": 0.7602398380314592,
+            "recall_10": 0.8106213985360535,
+            "recall_25": 0.8698022114935369
+          },
+          "total_queries": 12842,
+          "queries_with_results": 12842,
+          "topk_column_used": "arctic_topk"
+        }
+      }
+    }
+  }
+}

@@ -40,7 +40,7 @@ dependencies:
   - matplotlib-inline=0.1.7
   - mkl=2024.2.2
   - nest-asyncio=1.6.0
-  - numpy=2.2.6
+  - numpy=1.26
   - openssl=3.5.3
   - packaging=25.0
   - pandas=2.3.2
